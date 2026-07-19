@@ -50,8 +50,8 @@ CREATE TABLE operadoras (
     registro_ans VARCHAR(10) NOT NULL,
     cnpj CHAR(14) NOT NULL,
     razao_social VARCHAR(255) NOT NULL,
-    modalidade VARCHAR(100),
-    uf CHAR(2),
+    modalidade VARCHAR(100) NOT NULL,
+    uf CHAR(2) NOT NULL,
 
     CONSTRAINT uk_operadoras_registro_ans
         UNIQUE (registro_ans),
